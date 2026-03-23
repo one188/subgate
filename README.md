@@ -4,30 +4,16 @@
 
 ## 一键命令（推荐）
 
-安装（默认安装到 `/opt/subgate`）：
+安装
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/sh/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/main/sh/install.sh)
 ```
 
-升级（默认升级到最新 release）：
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/sh/upgrade.sh)
-```
-
-升级到指定版本（示例 `v1.1.1`）：
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/sh/upgrade.sh) --version v1.1.1
-```
-
-卸载（保留 `/opt/subgate` 配置和日志）：
+卸载
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/main/sh/uninstall.sh)
 ```
 
-卸载并删除 `/opt/subgate` 全部文件：
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/one188/subgate/main/sh/uninstall.sh) --purge
-```
 
 ## 手动安装
 
