@@ -81,10 +81,9 @@ UNIT
 
 systemctl daemon-reload
 
-echo "[OK] subgate installed"
-echo "[INFO] service file updated: ${SERVICE_PATH}"
-echo "[NEXT] 1) get machine id: ${BIN_PATH} -auth"
-echo "[NEXT] 2) complete authorization on your auth site"
+echo "[OK] subgate 安装完成"
+echo "[NEXT] 1) 获取机器码: ${BIN_PATH} -auth"
+echo "[NEXT] 2) 到授权站上完成授权"
 echo "[NEXT] 3) start service:"
 echo "       systemctl enable --now subgate.service"
 echo "       systemctl status subgate.service --no-pager"
