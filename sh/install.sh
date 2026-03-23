@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -81,8 +80,11 @@ WantedBy=multi-user.target
 UNIT
 
 systemctl daemon-reload
-systemctl enable --now subgate.service
 
 echo "[OK] subgate installed"
-echo "[INFO] Machine ID command: ${BIN_PATH} -auth"
-echo "[INFO] Service status: systemctl status subgate --no-pager"
+echo "[INFO] service file updated: ${SERVICE_PATH}"
+echo "[NEXT] 1) get machine id: ${BIN_PATH} -auth"
+echo "[NEXT] 2) complete authorization on your auth site"
+echo "[NEXT] 3) start service:"
+echo "       systemctl enable --now subgate.service"
+echo "       systemctl status subgate.service --no-pager"
