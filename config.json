@@ -1,0 +1,7 @@
+{
+  "run_mode": 1,
+  "protocol": "grpc",
+  "tg_bot_token": "tgbottoken",
+  "tg_chat_id": "tgid",
+  "timeout_default_allow": false
+}
