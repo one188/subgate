@@ -53,6 +53,10 @@ chmod 755 /opt/subgate/subgate
 
 `config.json` 关键字段：
 - `run_mode`: 运行模式（1~4）
+- 模式1 全量上传服务端判断
+- 模式2 下载规则列表和IP列表本地判断+全量上传日志到服务器
+- 模式3 下载规则列表和IP列表本地判断+只上传命中的规则到服务器
+- 模式4 下载规则列表和IP列表本地判断+不上传任何数据
 - `protocol`: `http` 或 `grpc`（grpc 当前为 WebSocket 长连接模式）
 - `tg_bot_token`: Telegram Bot Token
 - `tg_chat_id`: Telegram Chat ID
